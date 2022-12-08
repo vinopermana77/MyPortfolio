@@ -37,6 +37,11 @@ section {
     padding-top: 15rem;
     padding-bottom: 15rem;
   }
+
+  .skills {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
   .services {
     padding-top: 15rem;
     padding-bottom: 15rem;
@@ -56,6 +61,10 @@ section {
     padding-bottom: 5rem;
   }
   .about {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .skills {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
