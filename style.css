@@ -11,7 +11,7 @@
 }
 
 section {
-  padding: 2rem;
+  padding: 3rem;
 }
 .navbar > ul > li > a:before {
   content: '';
@@ -26,7 +26,6 @@ section {
   transition: all 0.3s ease-in-out 0s;
 }
 
-/* Responsive Breakpoint */
 @media (max-width: 1920px) {
   .home {
     padding-top: 15rem;
@@ -36,6 +35,10 @@ section {
   .about {
     padding-top: 15rem;
     padding-bottom: 15rem;
+  }
+
+  .img {
+    width: 400px;
   }
 
   .skills {
@@ -55,6 +58,13 @@ section {
     padding-bottom: 10rem;
   }
 }
+
+@media (max-width: 500px) {
+  .img {
+    width: 250px;
+  }
+}
+
 @media (max-width: 1366px) {
   .home {
     padding-top: 5rem;
