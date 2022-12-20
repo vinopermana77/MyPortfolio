@@ -26,6 +26,10 @@ section {
   transition: all 0.3s ease-in-out 0s;
 }
 
+.bi-eye {
+  font-size: 20px;
+}
+
 @media (max-width: 1920px) {
   .home {
     padding-top: 15rem;
