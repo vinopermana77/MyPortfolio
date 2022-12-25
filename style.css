@@ -1,37 +1,12 @@
-.home {
-  height: 100vh;
-  padding-top: 100px;
+:root {
+  /* colors */
+  --bg-primary: #cc0000;
+  --bg-secondary: #f2f2f2;
+  /* font */
+  --subHeading-font: 'Open Sans', sans-serif;
+  --heading-font: 'Merriweather', serif;
 }
 
-.about {
-  padding-top: 100px;
-}
-.about {
-  padding-top: 100px;
-}
-
-.skills {
-  padding-top: 100px;
-}
-
-.services {
-  padding-top: 100px;
-}
-
-.portfolio {
-  padding-top: 100px;
-}
-
-@media screen and (max-width: 1920px) {
-}
-@media screen and (max-width: 500px) {
-}
-
-@media screen and (max-width: 1496px) {
-}
-
-@media screen and (max-width: 1366px) {
-}
-
-@media screen and (max-width: 820px) {
+body {
+  background: #971f1f;
 }
