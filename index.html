@@ -297,8 +297,8 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-4 mb-3">
-                    <div class="card" data-aos="flip-left" data-aos-delay="500" data-aos-duration="1000">
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="card new-card" data-aos="flip-left" data-aos-delay="500" data-aos-duration="1000">
                         <img src="img/project/project java.png" class="card-img-top" alt="Projet 1">
                         <div class="card-body">
                             <h5 class="card-title">Absensi Guru SDN Puspitek</h5>
@@ -307,8 +307,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card" data-aos="flip-left" data-aos-delay="1000" data-aos-duration="1000">
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="card new-card" data-aos="flip-left" data-aos-delay="1000" data-aos-duration="1000">
                         <img src="img/project/RestAPI Laravel Auth Sanctum.png" class="card-img-top" alt="Projet 2">
                         <div class="card-body">
                             <h5 class="card-title">REST API Laravel Sanctum</h5>
@@ -317,9 +317,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card" data-aos="flip-left" data-aos-delay="1000" data-aos-duration="1000">
-                        <img src="img/project/Landing Page Ecommerce.png" card-img-top" alt="Projet 2">
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="card new-card" data-aos="flip-left" data-aos-delay="1000" data-aos-duration="1000">
+                        <img src="img/project/Landing Page Ecommerce.png" class="card-img-top" alt="Projet 2">
                         <div class="card-body">
                             <h5 class="card-title">Landing Page Ecommerce</h5>
                             <a href="https://github.com/vinopermana77/LandingPage-Ecommerce" target="_blank"
@@ -329,8 +329,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card" data-aos="flip-left" data-aos-delay="1500" data-aos-duration="1000">
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="card new-card" data-aos="flip-left" data-aos-delay="1500" data-aos-duration="1000">
                         <img src="img/project/RESTful API Laravel + Vue Js.png" class="card-img-top" alt="Projet 3">
                         <div class="card-body">
                             <h5 class="card-title">RESTful API Vue JS</h5>
@@ -339,8 +339,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card" data-aos="flip-left" data-aos-delay="2000" data-aos-duration="1000">
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <div class="card new-card" data-aos="flip-left" data-aos-delay="2000" data-aos-duration="1000">
                         <img src="img/project/CRUD-Laravel8.png" class="card-img-top" alt="Projet 4">
                         <div class="card-body">
                             <h5 class="card-title">CRUD Laravel + AdminLTE</h5>
@@ -349,6 +349,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="btn-load text-center mt-4">
+                <a href="" class="btn load-more text-uppercase mb-3 fw-bold">Load More</a>
             </div>
         </div>
     </section>
@@ -414,28 +417,29 @@
                 <div class="col-md-7" data-aos="zoom-in" data-aos-delay="500" data-aos-anchor-placement="center-bottom"
                     data-aos-duration="1000">
                     <div class="contact-form">
-                        <form>
+                        <form onsubmit="sendEmail(); reset(); return false;">
                             <div class="row">
                                 <div class="col-lg-12 mb-4">
-                                    <input name="name" type="text" placeholder="Your Name"
+                                    <input name="name" id="name" type="text" placeholder="Your Name" required
                                         class="form-control form-control-lg fs-6 shadow-sm border-0" />
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-12 mb-4">
-                                    <input name="email" type="text" placeholder="Your Email"
+                                    <input name="email" id="email" type="email" placeholder="Your Email" required
                                         class="form-control form-control-lg fs-6 shadow-sm border-0" />
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-12 mb-4">
-                                    <textarea name="message" rows="5" placeholder="Your Message"
+                                    <textarea name="message" id="message" rows="5" placeholder="Your Message" required
                                         class="form-control form-control-lg fs-6 shadow-sm border-0"></textarea>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-12">
-                                    <a href="#" type="submit" class="btn btn-submit px-3">Send Message</a>
+                                <div class="col">
+                                    <button type="submit" class="btn btn-submit px-3" id="btn-submit">Send
+                                        Message</button>
                                 </div>
                             </div>
                         </form>
@@ -447,11 +451,12 @@
     <!-- End Contact -->
 
     <!-- Footer -->
-    <footer class="footer border-top py-4 bg-danger">
+    <footer class="footer border-top py-4">
         <div class="container-lg">
             <div class="row">
                 <div class="col">
-                    <p class="m-0 text text-center text-white">Created By <i class="bi bi-person-circle"></i> Alvino
+                    <p class="m-0 text text-center text-white">&copy;Copyright 2022 | Created by <i
+                            class="bi bi-person-circle"></i> Alvino
                         Permana Putra
                     </p>
                 </div>
@@ -467,9 +472,33 @@
             once: true,
         });
     </script>
-    <!-- AOS Animation -->
 
+    <!-- Boxicons -->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- Swiper CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
+        integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- STMPJS Mail -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- Emailjs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("og-0oBdU61nV1vMim");
+        })();
+    </script>
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

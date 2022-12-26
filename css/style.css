@@ -53,9 +53,9 @@ body {
 }
 
 .btn-pdf:hover {
-  background-color: var(--bg-secondary);
+  background-color: white;
   color: var(--bg-primary);
-  border: 2px solid var(--bg-primary); /* Green */
+  border: 1px solid var(--bg-primary); /* Green */
 }
 
 /* Skills */
@@ -90,6 +90,19 @@ body {
   color: white;
 }
 
+.btn-load a {
+  background-color: var(--bg-primary);
+  color: white;
+}
+
+.load-more {
+  font-family: var(--subHeading-font);
+}
+
+.new-card {
+  display: none;
+}
+
 /* Contact */
 .contact-title h1 {
   font-family: var(--heading-font);
@@ -107,7 +120,12 @@ body {
 }
 
 .btn-submit:hover {
-  background-color: var(--bg-secondary);
+  background-color: white;
   color: var(--bg-primary);
-  border: 2px solid var(--bg-primary); /* Green */
+  border: 1px solid var(--bg-primary); /* Green */
+}
+
+/* Footer */
+.footer {
+  background-color: var(--bg-primary);
 }
