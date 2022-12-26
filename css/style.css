@@ -51,6 +51,13 @@ body {
   color: black;
 }
 
+.about-img .img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .about-text p {
   font-family: var(--subHeading-font);
 }
@@ -75,6 +82,10 @@ body {
 
 .skills-text {
   font-family: var(--subHeading-font);
+}
+
+.level-text {
+  color: var(--bg-primary);
 }
 
 /* Services */
