@@ -1,3 +1,4 @@
+// Load More
 $(() => {
   $('.new-card').slice(0, 3).show();
   $('.load-more').click(function (e) {
@@ -6,6 +7,15 @@ $(() => {
   });
 });
 
+// Navbar
+$(document).ready(function () {
+  $('.nav-link').click(function () {
+    $('.nav-link').removeClass('active');
+    $(this).addClass('active');
+  });
+});
+
+// Contact
 function sendEmail() {
   var params = {
     name: document.getElementById('name').value,

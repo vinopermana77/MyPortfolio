@@ -25,39 +25,29 @@
     <title>Portfolio | Alvino</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar-scroll" data-bs-offset="150" class="scrollspy-example" tabindex="0">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top" style="background-color: #f3f4f5">
-        <div class="container-lg">
-            <a class="navbar-brand" href="#"> <span>Vino</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse fw-bold" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link scrollto" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link scrollto" href="#about">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link scrollto" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item scrollto">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand ms-3" href=""><span>Alvino</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <div class="navbar-nav ms-auto" id="navbar-scroll">
+                        <a class="nav-link active" href="#home">Home</a>
+                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#skills">Skills</a>
                         <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item scrollto">
                         <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item scrollto">
                         <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <!-- Navbar -->
 
     <!-- Home -->
@@ -94,9 +84,9 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="about-img text-center mt-5">
-                        <img src="img/Foto About.PNG" class="img mb-5" width="350" data-aos="fade-right"
-                            data-aos-offset="300" data-aos-delay="200" data-aos-duration="1000" alt="profile" />
+                    <div class="about-img text-center">
+                        <img src="img/FotoAbout.JPG" class="img-thumbnail mb-5" width="350" data-aos="fade-right"
+                            data-aos-offset="300" data-aos-delay="200" data-aos-duration="1000" alt="Foto About" />
                     </div>
                 </div>
                 <div class="col-md-6">
