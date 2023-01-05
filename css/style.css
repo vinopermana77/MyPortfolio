@@ -102,7 +102,12 @@ body {
   font-family: var(--heading-font);
 }
 
-.card {
+.card .card-title {
+  font-family: var(--heading-font);
+  font-weight: bold;
+}
+
+.card-text {
   font-family: var(--subHeading-font);
 }
 
