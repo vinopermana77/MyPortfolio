@@ -1,18 +1,61 @@
-// Load More
-$(() => {
-  $('.new-card').slice(0, 3).show();
-  $('.load-more').click(function (e) {
-    e.preventDefault();
-    $('.new-card:hidden').slice(0, 4).slideDown();
-  });
+// Sticky Navbar
+let header = document.querySelector('header');
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+  header.classList.toggle('shadow', window.scrollY > 0);
 });
 
-// Navbar
-$(document).ready(function () {
-  $('.nav-link').click(function () {
-    $('.nav-link').removeClass('active');
-    $(this).addClass('active');
-  });
+menu.onclick = () => {
+  navbar.classList.toggle('active');
+};
+window.onscroll = () => {
+  navbar.classList.remove('active');
+};
+
+// Dark Mode
+let darkmode = document.querySelector('#darkmode');
+
+darkmode.onclick = () => {
+  if (darkmode.classList.contains('bx-moon')) {
+    darkmode.classList.replace('bx-moon', 'bx-sun');
+    document.body.classList.add('active');
+  } else {
+    darkmode.classList.replace('bx-sun', 'bx-moon');
+    document.body.classList.remove('active');
+  }
+};
+
+// Slider
+var swiper = new Swiper('.slide-content', {
+  slidesPerView: 3,
+  spaceBetween: 25,
+  loop: false,
+  centerSlide: 'true',
+  fade: 'true',
+  grabCursor: 'true',
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    520: {
+      slidesPerView: 2,
+    },
+    950: {
+      slidesPerView: 3,
+    },
+  },
 });
 
 // Contact
