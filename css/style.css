@@ -13,7 +13,7 @@
 :root {
   --main-color: #cc0000;
   --bg-color: #fff;
-  --text-color: #0f0c27;
+  --text-color: #312e46;
   --hover: hsla(39, 100%, 50%, 0.4);
 
   --big-font: 50px;
@@ -543,9 +543,8 @@ form textarea {
   content: '';
   height: 15px;
   width: 15px;
-  background: #fff;
-  bottom: -8px;
-  left: 50%;
+  bottom: -10px;
+  left: 45%;
   transform: translateY(-50%) rotate(45deg);
 }
 
@@ -571,14 +570,13 @@ form textarea {
 }
 
 .footer {
+  gap: 20px;
   padding: 20px;
   background: var(--main-color);
   text-align: center;
   color: #fff;
 }
-.copyright a {
-  color: #22cf91;
-}
+
 /* Making Responsive */
 @media (max-width: 992px) {
   header {
@@ -672,9 +670,6 @@ form textarea {
   .contact-form form {
     width: 100%;
   }
-  .contact-button {
-    margin-left: 25%;
-  }
 }
 @media only screen and (max-width: 768px) {
   :root {
@@ -694,7 +689,8 @@ form textarea {
   .contact-form form {
     width: 70%;
   }
-  .contact-button {
-    margin-left: 25%;
+
+  .btn-submit {
+    display: flex;
   }
 }
