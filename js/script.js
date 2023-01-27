@@ -66,7 +66,7 @@ function sendEmail() {
     message: document.getElementById('message').value,
   };
 
-  const serviceID = 'service_926i60o';
+  const serviceID = 'service_7vtce3y';
   const templateID = 'template_9jstit8';
 
   emailjs
@@ -75,9 +75,8 @@ function sendEmail() {
       document.getElementById('name').value = '';
       document.getElementById('email').value = '';
       document.getElementById('message').value = '';
-
       console.log(res);
-      alert('Your Message Sent Successfully');
+      alert('Your message sent successfully!!');
     })
     .catch((err) => console.log(err));
 }
