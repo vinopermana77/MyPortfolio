@@ -249,25 +249,25 @@ span {
   border-radius: 15px;
 }
 .html-bar {
-  width: 75%;
+  width: 80%;
 }
 .css-bar {
-  width: 50%;
+  width: 60%;
 }
 .js-bar {
-  width: 25%;
+  width: 20%;
 }
-.php-bar {
-  width: 25%;
+.vuejs-bar {
+  width: 20%;
 }
 .sql-bar {
-  width: 25%;
+  width: 20%;
 }
 .bootstrap-bar {
-  width: 50%;
+  width: 60%;
 }
 .laravel-bar {
-  width: 25%;
+  width: 40%;
 }
 
 /* Services */
