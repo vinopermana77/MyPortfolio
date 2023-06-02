@@ -437,6 +437,60 @@ span {
 }
 /* Portfolio */
 
+/* Certificate */
+.card-container-certificate {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card-certificate {
+  flex: 0 0 50%; /* Two cards in a row */
+  max-width: 50%;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.card-certificate img {
+  width: 100%;
+  height: auto;
+}
+
+.caption-certificate {
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+.caption-certificate h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.caption-certificate p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .card-certificate {
+    flex: 0 0 100%; /* Full width on tablets */
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-certificate {
+    flex: 0 0 100%; /* Full width on phones */
+    max-width: 100%;
+  }
+}
+
+/* Certificate */
+
 /* Contact */
 .contact-form {
   display: grid;
