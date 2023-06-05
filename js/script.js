@@ -58,6 +58,33 @@ var swiper = new Swiper(".slide-content", {
  },
 });
 
+// Filtering Portfolio
+// Add an event listener to each filter button
+var filterButtons = document.querySelectorAll(".filter-btn");
+filterButtons.forEach(function (button) {
+ button.addEventListener("click", function () {
+  // Remove the 'active' class from all buttons
+  filterButtons.forEach(function (btn) {
+   btn.classList.remove("active");
+  });
+  // Add the 'active' class to the clicked button
+  button.classList.add("active");
+
+  // Get the filter value from the clicked button
+  var filterValue = button.getAttribute("data-filter");
+
+  // Show/hide gallery items based on the filter value
+  var galleryItems = document.querySelectorAll(".gallery .item");
+  galleryItems.forEach(function (item) {
+   if (filterValue === "all" || item.classList.contains(filterValue)) {
+    item.style.display = "block";
+   } else {
+    item.style.display = "none";
+   }
+  });
+ });
+});
+
 // Contact
 function sendEmail() {
  var params = {

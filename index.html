@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!-- Link To CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <!-- Box Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
@@ -191,103 +192,78 @@
         <!-- Heading -->
         <div class="heading">
             <h2>Portfolio</h2>
-            <span>Click to see my latest projects on <a href="https://github.com/vinopermana77"
-                    target="_blank">GitHub</a>
+            <span>Click to see all my projects on <a href="https://github.com/vinopermana77" target="_blank">GitHub</a>
             </span>
-        </div>
-        <div class="slide-container swiper">
-            <div class="slide-content">
-                <div class="card-wrapper swiper-wrapper">
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="assets/img/project/blog-laravel10.png" alt="" class="card-img">
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <h2 class="name">Blog with Admin Panel</h2>
-                            <p class="description">Laravel 10 | Bootstrap | MySQL</p>
-                            <div class="card-button">
-                                <a href="https://github.com/vinopermana77/laravel-blog" target="_blank"
-                                    class="btn btn-card">SEE <i class='bx bxl-github'></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="assets/img/project/Landing Page Coffeeshop React.png" alt="" class="card-img">
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <h2 class="name">Landing Page Coffee Shop</h2>
-                            <p class="description">Task Keterampilan Webinar Arkademi</p>
-                            <div class="card-button">
-                                <a href="https://github.com/vinopermana77/react-webcoffeeshop" target="_blank"
-                                    class="btn btn-card">SEE <i class='bx bxl-github'></i></a>
-                                <a href="https://mycoffeeshop77.vercel.app/" target="_blank"
-                                    class="btn btn-card">Demo</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="assets/img/project/Laravel Online Food Order.png" alt="" class="card-img">
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <h2 class="name">E-Commerce Laravel 9</h2>
-                            <p class="description">Final Project Course Coding Studio.id</p>
-                            <div class="card-button">
-                                <a href="https://github.com/vinopermana77/Laravel-9-Ecommerce" target="_blank"
-                                    class="btn btn-card">SEE <i class='bx bxl-github'></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="assets/img/project/Landing Page Ecommerce.png" alt="" class="card-img">
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <h2 class="name">Landing Page E-commerce</h2>
-                            <p class="description">HTML | CSS | Bootstrap | Javascript</p>
-                            <div class="card-button">
-                                <a href="https://github.com/vinopermana77/LandingPage-Ecommerce" target="_blank"
-                                    class="btn btn-card">SEE <i class='bx bxl-github'></i></a>
-                                <a href="https://vinopermana77.github.io/LandingPage-Ecommerce/" target="_blank"
-                                    class="btn btn-card">Demo</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="assets/img/project/RestAPI Laravel Auth Sanctum.png" alt="" class="card-img">
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <h2 class="name">Rest API News Portal</h2>
-                            <p class="description">Laravel 9 | MySQL | Postman</p>
-                            <div class="card-button">
-                                <a href="https://github.com/vinopermana77/RestAPI-Laravel9" target="_blank"
-                                    class="btn btn-card">SEE <i class='bx bxl-github'></i></a>
-                            </div>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="fullstack">Fullstack</button>
+            </div>
+            <div class="gallery">
+                <div class="item fullstack">
+                    <img src="assets/img/project/blog-laravel10.png" alt="Laravel blog">
+                    <div class="overlay">
+                        <div class="caption">
+                            <h3>Laravel Blog with Admin Panel</h3>
+                            <a href="https://github.com/vinopermana77/laravel-blog" target="_blank" class="view-btn">Git
+                                <i class='bx bxl-github'></i></a>
                         </div>
                     </div>
                 </div>
+                <div class="item frontend">
+                    <img src="assets/img/project/Landing Page Coffeeshop React.png" alt="React Coffee Shop">
+                    <div class="overlay">
+                        <div class="caption">
+                            <h3>Landing Page Coffee Shop
+                                <br>
+                                (Webinar Arkademi)
+                            </h3>
+                            <a href="https://github.com/vinopermana77/react-webcoffeeshop" target="_blank"
+                                class="view-btn">Git <i class='bx bxl-github'></i></a>
+                            <a href="https://mycoffeeshop77.vercel.app/" target="_blank" class="view-btn">Preview</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item fullstack">
+                    <img src="assets/img/project/Laravel Online Food Order.png" alt="Web Image 2">
+                    <div class="overlay">
+                        <div class="caption">
+                            <h3>E-Commerce Laravel 9
+                                <br>
+                                (Course Codingstudio.id)
+                            </h3>
+                            <a href="https://github.com/vinopermana77/Laravel-9-Ecommerce" target="_blank"
+                                class="view-btn">Git <i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item frontend">
+                    <img src="assets/img/project/Landing Page Ecommerce.png" alt="Design Image 2">
+                    <div class="overlay">
+                        <div class="caption">
+                            <h3>Landing Page E-commerce</h3>
+                            <a href="https://github.com/vinopermana77/LandingPage-Ecommerce" target="_blank"
+                                class="view-btn">Git <i class='bx bxl-github'></i></a>
+                            <a href="https://vinopermana77.github.io/LandingPage-Ecommerce/" target="_blank"
+                                class="view-btn">Preview</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item backend">
+                    <img src="assets/img/project/RestAPI Laravel Auth Sanctum.png" alt="Design Image 2">
+                    <div class="overlay">
+                        <div class="caption">
+                            <h3>Laravel Rest API News Portal</h3>
+                            <a href="https://github.com/vinopermana77/RestAPI-Laravel9" target="_blank"
+                                class="view-btn">Git <i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more gallery items with appropriate classes and images -->
             </div>
-            <div class="swiper-button-next swiper-navBtn"></div>
-            <div class="swiper-button-prev swiper-navBtn"></div>
-            <div class="swiper-pagination"></div>
         </div>
+
     </section>
     <!-- Portfolio -->
 
