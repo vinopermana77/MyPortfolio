@@ -575,9 +575,9 @@ form textarea {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
 }
 
-.wrapper .whatsapp:hover span,
-.wrapper .whatsapp:hover .tooltip,
-.wrapper .whatsapp:hover .tooltip::before {
+.wrapper .email:hover span,
+.wrapper .email:hover .tooltip,
+.wrapper .email:hover .tooltip::before {
   background: #22cf91;
 }
 .wrapper .instagram:hover span,
